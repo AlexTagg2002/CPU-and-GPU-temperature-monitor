@@ -6,7 +6,7 @@ A PC CPU and GPU temperature monitor using Open Hardware Monitor, Python and Ard
    -Arduino IDE
    -A Python IDE (The software was developed in spyder within the anaconda package, however any python IDE should work)
 
-2. Set up the arduino and its components and connect it to one of your computers USB ports.
+2. Set up the arduino and its components and connect it to one of your computers USB ports (Setup details below).
 
 3. Open both the Arduino and Python pcmonitor files in their respective softwares. 
 
@@ -19,6 +19,19 @@ COM port. The required COM port can be found by going to Tools --> Port in the A
 6. Run the Arduino code and then the Python code after. (NOTE: It will not work if the Python code is ran before uploading
 the Arduino code or if Open Hardware Monitor is not open).
 
-After these steps the temperature monitor should work.
+Arduino circuit setup details (uses 16x2 lcd screen)
+VSS - GND
+VDD - 5v
+VO - potentiometer output
+RS - Pin 11
+RW - GND
+E - Pin 12
+(D0 - D3 have no pins attached)
+D4 - Pin 2
+D5 - Pin 3
+D6 - Pin 4
+D7 - Pin 5
+A - 5v
+K - GND
 
 v1.1/10.6.23
